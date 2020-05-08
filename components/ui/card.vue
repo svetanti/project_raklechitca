@@ -22,7 +22,7 @@ export default {};
   font-family: 'Inter';
 }
 .card__photo {
-  max-width: 300px;
+  width: 300px;
   max-height: 300px;
   object-fit: cover;
   margin-bottom: 20px;
