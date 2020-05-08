@@ -24,10 +24,16 @@ export default {
 <style scoped>
 .containerStory {
   display: grid;
-  grid-template-rows: repeat(2, calc((100% - 120px) / 2));
-  grid-template-columns: repeat(4, calc((100% - 70px) / 4));
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   row-gap: 70px;
   column-gap: 40px;
   max-width: 1320px;
+}
+@media screen and (max-width: 1280px) {
+  .containerStory {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 </style>
