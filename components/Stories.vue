@@ -42,6 +42,11 @@ export default {
   max-width: 100%;
   height: 82px;
   text-align: center;
-  align-items: center;
+  padding-top: 20px;
+  background-color: #fbfbfb;
+  color: #000000;
+}
+.story__link-all:visited {
+  color: #000000;
 }
 </style>
