@@ -1,14 +1,20 @@
 <template>
   <div class="container">
-    <header><header>
+    <header></header>
     <h1>Главная страница</h1>
     <a href="http://localhost:3000/stories">страница со всеми историями</a>
     <a href="http://localhost:3000/stories/1">страница с конкретной историей</a>
+    <instagram></instagram>
   </div>
 </template>
 
 <script>
-export default {};
+import Instagram from '~/components/Instagram';
+export default {
+  components: {
+    instagram: Instagram,
+  },
+};
 </script>
 
 <style>
