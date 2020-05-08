@@ -12,61 +12,26 @@
         </h3>
         <div class="selector">
           <button class="button__left">
-            <svg
-              class="button__left_opacity"
-              width="24"
-              height="24"
-              border="1px"
-              solid="BFBFBF"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M18.5,4.14L19.5,5.86L8.97,12L19.5,18.14L18.5,19.86L5,12L18.5,4.14Z"
-              />
-            </svg>
+            <img class="button__left_opacity" src="/images/button_left.svg" />
           </button>
           <button class="button__right">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              version="1.1"
-              id="mdi-greater-than"
-              width="24"
-              height="24"
-              border="1px"
-              solid=" #000000"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M5.5,4.14L4.5,5.86L15,12L4.5,18.14L5.5,19.86L19,12L5.5,4.14Z"
-              />
-            </svg>
+            <img src="/images/button_right.svg" />
           </button>
         </div>
       </div>
 
       <div class="video__block">
-        <a
-          class="video__container"
-          href="https://www.youtube.com/results?search_query=%23%D1%8D%D1%82%D0%BE%D0%BD%D0%B5%D0%BB%D0%B5%D1%87%D0%B8%D1%82%D1%81%D1%8F"
-        >
-          <svg
-            class="video__icon-play"
-            alt="Кнопка запуска видео"
-            width="41"
-            height="41"
-            viewBox="0 0 41 41"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            //возможны 2 вида кнопок.Это код для второго вида кнопки
-            <!-- <path d="M20.5 1.5375C30.955 1.5375 39.4625 10.045 39.4625 20.5C39.4625 30.955 30.955 39.4625 20.5 39.4625C10.045 39.4625 1.5375 30.955 1.5375 20.5C1.5375 10.045 10.045 1.5375 20.5 1.5375ZM20.5 0C9.17375 0 0 9.17375 0 20.5C0 31.8263 9.17375 41 20.5 41C31.8263 41 41 31.8263 41 20.5C41 9.17375 31.8263 0 20.5 0Z" fill="white"/> -->
-            <path
-              d="M17.7831 27.0086L27.5206 21.3711C27.8281 21.1661 28.0331 20.8586 28.0331 20.4999C28.0331 20.1411 27.8281 19.7824 27.5206 19.6286L17.7831 13.9911C17.4756 13.7861 17.0656 13.7861 16.7581 13.9911C16.4506 14.1961 16.2456 14.5036 16.2456 14.8624V26.1374C16.2456 26.4961 16.4506 26.8549 16.7581 27.0086C17.0656 27.1624 17.4244 27.2136 17.7831 27.0086Z"
-              fill="white"
-            />
-          </svg>
-        </a>
+        <div class="video__container">
+          <iframe
+            id="ytplayer"
+            type="text/html"
+            width="100%"
+            height="405"
+            src="https://www.youtube.com/embed/coOppM34GtI"
+            frameborder="0"
+            allowfullscreen
+          />
+        </div>
         <div class="video__notation">
           <p class="notation__description">
             Все видео вы можете найте на нашем
