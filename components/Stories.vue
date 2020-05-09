@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import StoryGrid from '@/components/StoryGrid';
+import StoryGrid from '@/components/ui/StoryGrid';
 export default {
   components: {
     'stories-grid': StoryGrid,
