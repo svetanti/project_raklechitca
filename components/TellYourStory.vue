@@ -39,9 +39,6 @@ export default {
 .your-story {
   width: 100vw;
   background-color: #f7f7f7;
-  font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 22px;
   text-align: left;
