@@ -100,6 +100,7 @@ export default {
 
 .footer__menu {
   grid-area: Nav;
+  align-self: start;
   margin-left: 113px;
 }
 
