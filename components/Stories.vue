@@ -1,8 +1,8 @@
 <template>
-  <div class="containerStories">
-    <h3 class="story__title">Истории неизлечимых привычек</h3>
-    <story-grid />
-    <a href="" class="story__link-all">Больше статей</a>
+  <div class="stories">
+    <h3 class="stories__title">Истории неизлечимых привычек</h3>
+    <stories-grid />
+    <a href="" class="stories__link-all">Больше статей</a>
   </div>
 </template>
 
@@ -10,16 +10,16 @@
 import StoryGrid from '@/components/StoryGrid';
 export default {
   components: {
-    'story-grid': StoryGrid,
+    'stories-grid': StoryGrid,
   },
 };
 </script>
 
 <style scoped>
-.containerStories {
+.stories {
   max-width: 1320px;
 }
-.story__title {
+.stories__title {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
@@ -30,10 +30,10 @@ export default {
   max-width: 413px;
   margin-bottom: 70px;
 }
-.story__link-all {
+.stories__link-all {
   display: block;
   text-decoration: none;
-  font-family: Inter;
+  font-family: 'Inter';
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -42,11 +42,11 @@ export default {
   max-width: 100%;
   height: 82px;
   text-align: center;
-  padding-top: 20px;
+  padding: 31px 0;
   background-color: #fbfbfb;
   color: #000000;
 }
-.story__link-all:visited {
+.stories__link-all:visited {
   color: #000000;
 }
 </style>
