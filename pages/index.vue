@@ -4,15 +4,15 @@
     <h1>Главная страница</h1>
     <a href="http://localhost:3000/stories">страница со всеми историями</a>
     <a href="http://localhost:3000/stories/1">страница с конкретной историей</a>
-    <instagram></instagram>
+    <your_story />
   </div>
 </template>
 
 <script>
-import Instagram from '~/components/Instagram';
+import TellYourStory from '~/components/TellYourStory';
 export default {
   components: {
-    instagram: Instagram,
+    your_story: TellYourStory,
   },
 };
 </script>
