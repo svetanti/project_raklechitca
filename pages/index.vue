@@ -4,6 +4,7 @@
     <h1>Главная страница</h1>
     <a href="http://localhost:3000/stories">страница со всеми историями</a>
     <a href="http://localhost:3000/stories/1">страница с конкретной историей</a>
+
     <stories />
     <instagram />
   </div>
