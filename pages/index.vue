@@ -5,14 +5,17 @@
     <a href="http://localhost:3000/stories">страница со всеми историями</a>
     <a href="http://localhost:3000/stories/1">страница с конкретной историей</a>
     <stories />
+    <instagram />
   </div>
 </template>
 
 <script>
 import Stories from '@/components/Stories';
+import Instagram from '~/components/Instagram';
 export default {
   components: {
     stories: Stories,
+    instagram: Instagram,
   },
 };
 </script>
