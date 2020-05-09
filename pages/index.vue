@@ -4,15 +4,19 @@
     <h1>Главная страница</h1>
     <a href="http://localhost:3000/stories">страница со всеми историями</a>
     <a href="http://localhost:3000/stories/1">страница с конкретной историей</a>
-    <your_story />
+
+    <stories />
+    <instagram />
   </div>
 </template>
 
 <script>
-import TellYourStory from '~/components/TellYourStory';
+import Stories from '@/components/Stories';
+import Instagram from '~/components/Instagram';
 export default {
   components: {
-    your_story: TellYourStory,
+    stories: Stories,
+    instagram: Instagram,
   },
 };
 </script>
@@ -21,10 +25,10 @@ export default {
 .container {
   margin: 0 auto;
   min-height: 100vh;
+  max-width: 1320px;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   flex-direction: column;
 }
 </style>
