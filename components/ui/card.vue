@@ -25,7 +25,7 @@ export default {};
   width: 300px;
   max-height: 300px;
   object-fit: cover;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 .card__title {
   font-style: normal;
