@@ -1,11 +1,26 @@
 @font-face {
-src: url('./JetBrainsMono-Medium.woff');
-font-family: 'Jet Brains';
-font-weight: normal;
-
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('Inter-Regular.woff2') format('woff2'),
+       url('Inter-Regular.woff') format('woff');
 }
+
 @font-face {
-  src: url('./JetBrainsMono-Regular.woff');
-  font-family:'Jet Brains';
-  font-weight:bold ;
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('Inter-SemiBold.woff2') format('woff2'),
+       url('Inter-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('Inter-Black.woff2') format('woff2'),
+       url('Inter-Black.woff') format('woff');
 }

@@ -3,12 +3,15 @@
     <section class="video">
       <div class="description__block">
         <h2 class="description-title">
-          Истории людей, победивших рак, но не свои привычки
+          Истории людей,<br />
+          победивших рак, но не<br />
+          свои привычки
         </h2>
         <h3 class="description-subtitle">
-          Есть вещи, которые не лечатся. Вещи ставшие частью нашего «я», фобии,
-          страхи. Но это точно не рак. Рак лечится. Лучшее доказательство — люди
-          с их историями.
+          Есть вещи, которые не лечатся. Вещи<br />
+          ставшие частью нашего «я», фобии,<br />
+          страхи. Но это точно не рак. Рак<br />
+          лечится. Лучшее доказательство — <br />люди с их историями.
         </h3>
         <div class="selector">
           <button class="button__left">
@@ -23,12 +26,12 @@
       <div class="video__block">
         <div class="video__container">
           <iframe
+            class="iframe"
             id="ytplayer"
             type="text/html"
             width="100%"
-            height="405"
+            height="450"
             src="https://www.youtube.com/embed/coOppM34GtI"
-            frameborder="0"
             allowfullscreen
           />
         </div>
@@ -45,7 +48,9 @@
       </div>
     </section>
     <div class="video__rectangle">
-      <p class="rectangle__description">И В ОТЛИЧИЕ ОТ РАКА, #ЭТОНЕЛЕЧИТСЯ</p>
+      <p class="rectangle__description">
+        И В ОТЛИЧИЕ ОТ РАКА, <span class="bold">&nbsp;#ЭТОНЕЛЕЧИТСЯ</span>
+      </p>
     </div>
   </div>
 </template>
@@ -141,6 +146,9 @@ export default {};
   background-size: cover;
   margin: 0px 0px 10px 0px;
 }
+.iframe {
+  border: 0;
+}
 .video__icon-play {
   margin: auto;
   width: 90px;
@@ -189,7 +197,7 @@ export default {};
 .video__rectangle {
   width: 1320px;
   height: 86px;
-  margin: 0px 60px 100px 60px;
+  margin: 0px auto;
   background: #613a93;
   border: 1px solid #000000;
   box-sizing: border-box;
@@ -210,84 +218,67 @@ export default {};
   text-align: center;
   color: #ffffff;
 }
+.bold {
+  font-weight: bold;
+  font-size: 40px;
+}
 
 @media all and (min-width: 1024px) and (max-width: 1440px) {
   .video {
     width: 100vw;
   }
-}
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
   .description__block {
     width: 29vw;
   }
-}
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
   .description-title {
     display: flex;
     width: 100%;
   }
-}
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
   .description-subtitle {
     display: flex;
     width: 80%;
   }
-}
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
   .selector {
     display: flex;
     width: 20%;
   }
-}
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
   .button__left {
     display: flex;
     width: 100%;
     height: 100%;
   }
-}
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
   .button__right {
     display: flex;
     width: 100%;
     height: 100%;
   }
-}
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
   .video__block {
     width: 60vw;
   }
-}
-@media all and (min-width: 1024px) and (max-width: 1440px) {
+
   .video__container {
     width: 100%;
     height: 100%;
     display: flex;
   }
-}
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
   .video__notation {
     width: 60%;
   }
-}
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
   .video__rectangle {
     width: 92vw;
     height: 86px;
     display: flex;
   }
-}
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
   .rectangle__description {
     display: flex;
     /* width: 57%; */

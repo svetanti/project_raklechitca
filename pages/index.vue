@@ -2,18 +2,21 @@
   <div class="container">
     <header></header>
     <!-- <h1>Главная страница</h1> -->
-
+    <tellStory />
     <videoBlock />
-    <a href="http://localhost:3000/stories">страница со всеми историями</a>
-    <a href="http://localhost:3000/stories/1">страница с конкретной историей</a>
+
+    <!-- <a href="http://localhost:3000/stories">страница со всеми историями</a>
+    <a href="http://localhost:3000/stories/1">страница с конкретной историей</a> -->
   </div>
 </template>
 
 <script>
-import video from '@/components/video';
+import video from '@/components/blocks/video';
+import tellStory from '@/components/blocks/tellStory';
 export default {
   components: {
     videoBlock: video,
+    tellStory,
   },
 };
 </script>
