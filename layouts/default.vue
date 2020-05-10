@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main-container">
     <main-header />
     <nuxt />
     <main-footer />
@@ -23,6 +23,11 @@ html {
   font-family: 'Inter', 'Arial', sans-serif;
   text-rendering: optimizeLegibility;
   box-sizing: border-box;
+}
+
+.main-container {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 *,
