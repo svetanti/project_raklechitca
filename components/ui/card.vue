@@ -15,4 +15,11 @@
 <script>
 export default {};
 </script>
-<style lang="scss" scoped></style>
+<style scoped>
+.card__photo {
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+  object-position: top;
+}
+</style>
