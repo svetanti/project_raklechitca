@@ -18,6 +18,7 @@ export default {
 <style scoped>
 .stories {
   max-width: 1320px;
+  padding: 100px 0;
 }
 .stories__title {
   font-family: 'Inter';

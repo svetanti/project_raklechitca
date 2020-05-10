@@ -39,6 +39,7 @@ export default {
 <style scoped>
 .instagram {
   max-width: 1320px;
+  color: #666666;
 }
 
 .instagram-header {
@@ -89,6 +90,7 @@ export default {
   font-weight: 600;
   font-size: 32px;
   line-height: 36px;
+  color: black;
 }
 
 .paragraph {
