@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a :href="url" class="link">{{ text }}</a>
+    <a :href="url" v-html="text" class="link"></a>
   </div>
 </template>
 

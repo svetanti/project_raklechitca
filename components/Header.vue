@@ -26,13 +26,6 @@ export default {
 
 <style scoped>
 .header {
-  font-family: 'Inter', 'arial', sans-serif;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  text-rendering: optimizeLegibility;
   min-height: 76px;
   width: calc(100% - 120px);
   margin: 0 auto;
@@ -40,12 +33,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-@media screen and (max-width: 1220px) {
-  .header {
-    width: calc(100% - 100px);
-  }
+  box-sizing: border-box;
 }
 
 .header__logo {
@@ -66,5 +54,15 @@ export default {
 
 .header__link_share {
   color: #121212;
+}
+
+@media screen and (max-width: 1280px) {
+  .header {
+    min-height: 72px;
+    width: calc(100% - 100px);
+  }
+  .header__logo {
+    line-height: 18px;
+  }
 }
 </style>

@@ -11,11 +11,7 @@
         <page-link class="link" :url="links[1].url" :text="links[1].text" />
       </li>
       <li class="footer__link_share">
-        <page-link
-          class="link"
-          :url="links[2].url"
-          :text="links[2].text"
-        />&#8599;
+        <page-link class="link" :url="links[2].url" :text="links[2].text" />
       </li>
     </ul>
 
@@ -49,7 +45,7 @@ export default {
         },
         {
           url: '#',
-          text: 'Поделитесь ',
+          text: 'Поделитесь <span>&#8599</span>',
         },
       ],
     };
@@ -59,33 +55,19 @@ export default {
 
 <style scoped>
 .footer {
-  font-family: 'Inter', 'arial', sans-serif;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  text-rendering: optimizeLegibility;
   min-height: 356px;
   width: calc(100% - 120px);
   margin: 0 auto;
   padding: 60px 0;
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(2, min-content) 1fr;
-  grid-template-rows: repeat(3, min-content);
+  grid-template-rows: repeat(2, min-content);
   grid-template-areas:
     'Thanks Nav Links'
-    'Thanks . Share'
     'Project-name . Copyright';
   justify-content: space-between;
   align-content: space-between;
-}
-
-@media screen and (max-width: 1220px) {
-  .footer {
-    width: calc(100% - 100px);
-    padding: 50px 0;
-  }
 }
 
 .footer__text {
@@ -105,15 +87,17 @@ export default {
 }
 
 .footer__links {
+  font-size: 18px;
+  line-height: 24px;
   list-style: none;
   margin: 0;
   padding: 0;
   width: 300px;
+  grid-area: Links;
   justify-self: end;
 }
 
 .footer__social {
-  grid-area: Links;
   margin-bottom: 44px;
 }
 
@@ -125,6 +109,7 @@ export default {
 .footer__copyright {
   font-size: 18px;
   line-height: 18px;
+  margin: 0;
   color: #898989;
 }
 
@@ -135,5 +120,56 @@ export default {
 .footer__copyright_authors {
   grid-area: Copyright;
   justify-self: end;
+}
+
+@media screen and (max-width: 1280px) {
+  .footer {
+    min-height: 316px;
+    width: calc(100% - 100px);
+    padding: 50px 0;
+  }
+
+  .footer__text {
+    font-size: 28px;
+    line-height: 32px;
+    width: 305px;
+  }
+  .footer__menu {
+    margin-left: 102px;
+  }
+
+  .footer__links {
+    font-size: 16px;
+    width: 265px;
+  }
+
+  .footer__copyright {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    min-height: 292px;
+    width: calc(100% - 100px);
+    padding: 50px 0;
+  }
+
+  .footer__text {
+    font-size: 24px;
+    line-height: 28px;
+    width: 288px;
+  }
+  .footer__menu {
+    margin-left: 30px;
+  }
+
+  .footer__links {
+    font-size: 16px;
+    width: fit-content;
+  }
+  .footer__social {
+    margin-bottom: 30px;
+  }
 }
 </style>

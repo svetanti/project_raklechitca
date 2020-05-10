@@ -45,4 +45,10 @@
 .header__menu .menu__link_active:hover {
   border-bottom: 1.5px solid rgba(0, 0, 0, 0.8);
 }
+
+@media screen and (max-width: 1280px) {
+  .menu {
+    font-size: 16px;
+  }
+}
 </style>
