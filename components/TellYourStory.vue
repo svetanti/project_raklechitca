@@ -5,9 +5,9 @@
       <div class="description-container">
         <div class="description-side">
           <p class="description-text">
-            Мы публикуем новые истории на сайте раз в неделю. Есть 2 варианта
-            поделиться своей историей неизлечимых привычек, навязчивых идей и
-            болезненных привязанностей.
+            Мы публикуем новые истории на сайте раз в неделю. Есть
+            2&nbsp;варианта поделиться своей историей неизлечимых привычек,
+            навязчивых идей и болезненных привязанностей.
           </p>
           <div class="variant-toggler">
             <p class="variant variant_active">1-й вариант</p>
@@ -112,7 +112,11 @@ export default {
   left: calc(50% + 20px);
 }
 
-@media screen and (max-width: 1399px) {
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+  .your-story {
+    padding: 90px 0;
+  }
+
   .content-container {
     max-width: 1180px;
   }
@@ -130,11 +134,255 @@ export default {
   .description-text {
     font-size: 16px;
     line-height: 20px;
+    width: 54%;
+  }
+
+  .variant-toggler {
+    line-height: 1.5em;
   }
 
   .form-button {
     height: 48px;
     width: 18%;
+  }
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1279px) {
+  .your-story {
+    font-size: 13px;
+    line-height: 16px;
+    padding: 75px 0;
+  }
+
+  .content-container {
+    width: 90%;
+    max-width: 924px;
+  }
+
+  .your-story-header {
+    width: 320px;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+
+  .description-container {
+    margin-bottom: 75px;
+  }
+
+  .description-text {
+    width: 60%;
+  }
+
+  .variant-toggler {
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  .variant-text {
+    font-size: 15px;
+    line-height: 19px;
+  }
+
+  .form-button {
+    height: 46px;
+    width: 23%;
+    left: calc(50% + 14px);
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (min-width: 730px) and (max-width: 1022px) {
+  .your-story {
+    font-size: 15px;
+    line-height: 19px;
+    padding: 80px 0;
+  }
+
+  .your-story-header {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .content-container {
+    width: 53%;
+    max-width: 688px;
+  }
+
+  .description-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    width: 95%;
+    margin-bottom: 45px;
+  }
+
+  .description-side {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .description-text {
+    width: 100%;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .variant-toggler {
+    width: 100%;
+    display: flex;
+    margin: 75px 0 25px;
+    line-height: 1.8em;
+  }
+
+  .variant:not(:last-of-type) {
+    margin-right: 30px;
+  }
+
+  .variant_active {
+    border-bottom: 2px solid currentColor;
+  }
+
+  .variant-side {
+    width: 100%;
+  }
+
+  .form-button {
+    position: inherit;
+    margin-left: 12px;
+    width: 57%;
+    font-size: 15px;
+    line-height: 18px;
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 729px) {
+  .your-story {
+    font-size: 15px;
+    line-height: 19px;
+    padding: 60px 0;
+  }
+
+  .your-story-header {
+    font-size: 24px;
+    line-height: 28px;
+    max-width: 85%;
+  }
+
+  .content-container {
+    width: 80%;
+    max-width: 688px;
+  }
+
+  .description-container {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-bottom: 45px;
+  }
+
+  .description-side {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .description-text {
+    width: 100%;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .variant-toggler {
+    width: 100%;
+    display: flex;
+    margin: 55px 0 20px;
+    line-height: 1.8em;
+  }
+
+  .variant:not(:last-of-type) {
+    margin-right: 30px;
+  }
+
+  .variant_active {
+    border-bottom: 2px solid currentColor;
+  }
+
+  .variant-side {
+    width: 100%;
+  }
+
+  .form-button {
+    position: inherit;
+    width: 57%;
+    font-size: 15px;
+    line-height: 18px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .your-story {
+    font-size: 13px;
+    line-height: 16px;
+    padding: 45px 0 50px;
+  }
+
+  .content-container {
+    width: 90%;
+    min-width: 240px;
+  }
+
+  .your-story-header {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 16px;
+  }
+
+  .description-container {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .description-side {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .description-text {
+    width: 100%;
+  }
+
+  .variant-toggler {
+    width: 100%;
+    display: flex;
+    margin: 36px 0 17px;
+    line-height: 1.8em;
+  }
+
+  .variant:not(:last-of-type) {
+    margin-right: 20px;
+  }
+
+  .variant_active {
+    border-bottom: 2px solid currentColor;
+  }
+
+  .variant-side {
+    width: 100%;
+  }
+
+  .form-button {
+    position: inherit;
+    width: 100%;
+    max-width: 100%;
+    font-size: 13px;
+    line-height: 16px;
+    height: 40px;
   }
 }
 </style>
