@@ -1,8 +1,6 @@
 <template>
   <div class="container">
-    <h1>Главная страница</h1>
-    <a href="http://localhost:3000/stories">страница со всеми историями</a>
-    <a href="http://localhost:3000/stories/1">страница с конкретной историей</a>
+    <banner />
     <stories />
     <instagram />
     <your_story />
@@ -11,6 +9,7 @@
 </template>
 
 <script>
+import Banner from '@/components/ui/Banner';
 import Stories from '@/components/Stories';
 import Instagram from '~/components/Instagram';
 import TellYourStory from '~/components/TellYourStory';
@@ -21,6 +20,7 @@ export default {
     instagram: Instagram,
     your_story: TellYourStory,
     statistic: Statistic,
+    banner: Banner,
   },
 };
 </script>
