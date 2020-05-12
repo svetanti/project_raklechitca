@@ -65,6 +65,7 @@ export default {};
   line-height: 77px;
   text-align: center;
   color: #ffffff;
+  margin: 90px 0 70px 0;
 }
 .about-project__subtitle {
   font-style: normal;
