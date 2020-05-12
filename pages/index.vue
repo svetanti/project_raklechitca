@@ -5,6 +5,7 @@
     <instagram />
     <your_story />
     <statistic />
+
     <about />
   </div>
 </template>
@@ -23,7 +24,6 @@ export default {
     stories: Stories,
     instagram: Instagram,
     your_story: TellYourStory,
-
     statistic: Statistic,
     banner: Banner,
     about: AboutProject,

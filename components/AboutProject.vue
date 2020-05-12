@@ -48,6 +48,7 @@ export default {};
   flex-direction: column;
   align-items: center;
   background-color: #613a93;
+
   width: 100vw;
   padding: 90px 60px 100px 60px;
 }
@@ -106,6 +107,7 @@ export default {};
 }
 .about-project__description {
   padding-left: 0;
+
   list-style-type: none;
 }
 .about-project__paragraph:first-child {
@@ -119,6 +121,7 @@ export default {};
   color: #dedede;
   max-width: 640px;
 }
+
 .about-project__place-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -126,6 +129,7 @@ export default {};
   grid-column-gap: 40px;
   grid-row-gap: 0px;
 }
+
 .about-project__place-container_information {
   display: flex;
   flex-direction: row;
