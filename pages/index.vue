@@ -5,6 +5,7 @@
     <instagram />
     <your_story />
     <statistic />
+
   </div>
 </template>
 
@@ -13,14 +14,22 @@ import Banner from '@/components/ui/Banner';
 import Stories from '@/components/Stories';
 import Instagram from '~/components/Instagram';
 import TellYourStory from '~/components/TellYourStory';
+
 import Statistic from '@/components/Statistic';
+
+// import AboutProject from '~/components/AboutProject';
+
 export default {
   components: {
     stories: Stories,
     instagram: Instagram,
     your_story: TellYourStory,
+
     statistic: Statistic,
     banner: Banner,
+
+    // about: AboutProject,
+
   },
 };
 </script>
