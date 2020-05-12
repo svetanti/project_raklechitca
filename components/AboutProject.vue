@@ -1,5 +1,6 @@
 <template>
   <section class="about-project">
+
     <div class="about-project__container">
       <h2 class="about-project__title">#РАКЛЕЧИТСЯ</h2>
       <p class="about-project__subtitle">О проекте</p>
@@ -34,6 +35,7 @@
           </li>
         </ul>
       </div>
+
     </div>
   </section>
 </template>
@@ -48,6 +50,7 @@ export default {};
   flex-direction: column;
   align-items: center;
   background-color: #613a93;
+
   width: 100vw;
   padding: 90px 60px 100px 60px;
 }
@@ -56,6 +59,7 @@ export default {};
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 .about-project__title {
   font-style: normal;
@@ -64,7 +68,7 @@ export default {};
   line-height: 77px;
   text-align: center;
   color: #ffffff;
-  margin: 0 0 70px 0;
+
 }
 .about-project__subtitle {
   font-style: normal;
@@ -85,6 +89,7 @@ export default {};
 }
 .about-project__list-names {
   list-style-type: none;
+
   padding-left: 0;
 }
 .about-project__name {
@@ -99,14 +104,16 @@ export default {};
   font-weight: 500;
   color: #ffffff;
   cursor: pointer;
+
 }
 .about-project__name_company {
   font-weight: normal;
   color: #c9c9c9;
 }
 .about-project__description {
+
   padding-left: 0;
-  list-style-type: none;
+
 }
 .about-project__paragraph:first-child {
   margin-bottom: 20px;
@@ -119,13 +126,16 @@ export default {};
   color: #dedede;
   max-width: 640px;
 }
+
 .about-project__place-container {
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 40px;
   grid-row-gap: 0px;
 }
+
 .about-project__place-container_information {
   display: flex;
   flex-direction: row;
@@ -268,4 +278,5 @@ export default {};
     margin-bottom: 40px;
   }
 }
+
 </style>
