@@ -29,7 +29,6 @@ export default {
 
     statistic: Statistic,
     banner: Banner,
-
     about: AboutProject,
   },
 };
