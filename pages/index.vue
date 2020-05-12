@@ -6,6 +6,7 @@
     <stories />
     <instagram />
     <your_story />
+    <about />
   </div>
 </template>
 
@@ -13,11 +14,13 @@
 import Stories from '@/components/Stories';
 import Instagram from '~/components/Instagram';
 import TellYourStory from '~/components/TellYourStory';
+import AboutProject from '~/components/AboutProject';
 export default {
   components: {
     stories: Stories,
     instagram: Instagram,
     your_story: TellYourStory,
+    about: AboutProject,
   },
 };
 </script>
