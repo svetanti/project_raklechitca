@@ -10,9 +10,3 @@ export const mutations = {
     state.popupShown = false;
   },
 };
-
-// export const getters = {
-//     getPopupShown(state) {
-//         return state.popupShown
-//     }
-// }

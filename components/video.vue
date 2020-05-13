@@ -3,9 +3,7 @@
     <section class="video">
       <div class="description__block">
         <h2 class="description-title">
-          Истории людей,<br />
-          победивших рак, но не<br />
-          свои привычки
+          Истории людей, победивших рак, но не свои привычки
         </h2>
         <h3 class="description-subtitle">
           Есть вещи, которые не лечатся. Вещи<br />
