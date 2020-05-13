@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="storiesBlock" @click="$emmit('btnClick')">
+    <section class="storiesBlock">
       <div class="storyDescription">
         <h2 class="storyDescription__title">
           Расскажите свою<br />
@@ -15,12 +15,12 @@
         </p>
       </div>
 
-      <div class="buttonDescription" @click="$emmit('btnClick')">
+      <div class="buttonDescription">
         <div class="options">
           <p class="option__first">1-й вариант</p>
           <p class="option__second">2-й вариант</p>
         </div>
-        <div class="options__description" @click="$emmit('btnClick')">
+        <div class="options__description">
           <p class="option__first-description">
             Заполнить подробную форму прямо на сайте и мы опубликуем вашу<br />
             историю после проверки. Пожалуйста, заполняйте все пункты<br />
@@ -32,33 +32,44 @@
             зададим вопросы, уточним детали вашей истории.
           </p>
 
-          <popupButton />
+          <Button
+            @custom-click="$store.commit('popup/open')"
+            className="popup__button"
+          >
+            <p class="popup__button-description">
+              <slot>Заполнить форму</slot>
+            </p>
+          </Button>
         </div>
       </div>
     </section>
-    <popup />
   </div>
 </template>
 
 <script>
-import popupButton from '@/components/ui/popupButton';
+import button from '@/components/blocks/button';
 import popup from '@/components/blocks/popup';
 // import optionFirst from '@/components/ui/optionFirst';
 // import optionSecond from '@/components/ui/optionSecond';
 
 export default {
   components: {
-    popupButton,
-    popup,
+    Button: button,
   },
+  // methods: {
+  //   popupShown() {
+  //     this.$store.commit('popup/toggglePopup')
+  //   },
+  // },
   methods: {
     popupHandler() {
-      this.popupShow = !this.popupShow;
+      console.log('Click here');
+      this.popupShown = !this.popupShown;
     },
   },
   data() {
     return {
-      popupShow: false,
+      popupShown: false,
     };
   },
 };
@@ -203,6 +214,23 @@ export default {
   z-index: 3;
 }
 
+.popup__button {
+  width: 280px;
+  height: 52px;
+  background: #613a93;
+}
+.popup__button-description {
+  width: 192px;
+  height: 18px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+  margin: auto;
+}
 .popup__header {
   display: flex;
 }

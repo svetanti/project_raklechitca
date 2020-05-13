@@ -1,10 +1,30 @@
 <template>
   <div>
+    <popup v-if="this.$store.state.popup.popupShown"></popup>
+
     <nuxt />
   </div>
 </template>
 
-<script></script>
+<script>
+import popup from '@/components/blocks/popup';
+
+export default {
+  components: {
+    popup,
+  },
+  // methods: {
+  //   popupHandler() {
+  //     this.popupShow = !this.popupShow;
+  //   },
+  // },
+  // data() {
+  //   return {
+  //     popupShow: false,
+  //   };
+  // },
+};
+</script>
 <style>
 html {
   font-family: 'Inter', 'Arial', sans-serif;

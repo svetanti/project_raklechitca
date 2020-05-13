@@ -3,9 +3,11 @@
     <h3 class="popup__step">{{ step }}</h3>
     <img
       class="icon__close"
+      @click="$store.commit('popup/close')"
       src="/images/icon__close.svg"
       alt="Кнопка закрытия формы отправки сообщения"
     />
+
     <p class="popup__question">{{ question }}</p>
 
     <Input placeholder="Напишите тут" :bottomBorder="true" />
@@ -50,6 +52,7 @@ export default {
   align-items: center;
   margin: auto;
   z-index: 113;
+  position: fixed;
 }
 
 .popup__step {
@@ -127,8 +130,8 @@ export default {
   width: 20px;
   height: 20px;
   position: relative;
-  bottom: 65px;
-  left: 420px;
+  bottom: 79px;
+  left: 870px;
   border: 0;
 }
 </style>
