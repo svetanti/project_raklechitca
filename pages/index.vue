@@ -1,36 +1,47 @@
 <template>
   <div class="container">
-    <header></header>
-    <tellStory></tellStory>
+    <banner />
     <videoBlock />
-    <!-- v-if ="ModalVisible" -->
+    <stories />
+    <instagram />
+    <your_story />
+    <statistic />
 
-    <a href="http://localhost:3000/stories">страница со всеми историями</a>
-    <a href="http://localhost:3000/stories/1">страница с конкретной историей</a>
+    <about />
   </div>
 </template>
 
 <script>
-import video from '@/components/blocks/video';
-// import popup from '@/components/blocks/popup';
-import tellStory from '@/components/blocks/tellStory';
+import Banner from '@/components/ui/Banner';
+import video from '@/components/video';
+import Stories from '@/components/Stories';
+import Instagram from '~/components/Instagram';
+import TellYourStory from '~/components/TellYourStory';
+
+import Statistic from '@/components/Statistic';
+import AboutProject from '~/components/AboutProject';
+
 export default {
   components: {
     videoBlock: video,
-    // popup,
-    tellStory,
+    stories: Stories,
+    instagram: Instagram,
+    your_story: TellYourStory,
+    statistic: Statistic,
+    banner: Banner,
+    about: AboutProject,
   },
 };
 </script>
 
-<style>
+<style scoped>
 .container {
   margin: 0 auto;
   min-height: 100vh;
+  max-width: 1440px;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   flex-direction: column;
 }
 </style>

@@ -1,7 +1,10 @@
 <template>
   <div>
     <div>
-      <div :class="['modalWindow', className]">
+      <div
+        :class="['modalWindow', className]"
+        @click="$store.commit('popup/close')"
+      >
         <div class="overlay"></div>
         <div :class="['popup', className]">
           <popupQuiz
@@ -15,7 +18,7 @@
 </template>
 
 <script>
-import popupQuiz from '@/components/blocks/popupQuiz';
+import popupQuiz from '@/components/popupQuiz';
 
 // import optionFirst from '@/components/ui/optionFirst';
 // import optionSecond from '@/components/ui/optionSecond';
