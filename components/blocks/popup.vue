@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-if="popupShow">
+    <div>
       <div :class="['modalWindow', className]">
         <div class="overlay"></div>
         <div :class="['popup', className]">
@@ -22,10 +22,7 @@ import popupQuiz from '@/components/blocks/popupQuiz';
 export default {
   components: {
     popupQuiz,
-    // optionFirst,
-    // optionSecond,
   },
-  // props:[className]
 };
 </script>
 
@@ -38,9 +35,10 @@ export default {
   left: 0;
   z-index: 10;
 }
+
 .overlay {
-  width: 1440px;
-  height: 900px;
+  width: 100vw;
+  height: 100vh;
   opacity: 0.5;
   background: black;
   display: flex;

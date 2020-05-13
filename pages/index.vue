@@ -1,8 +1,7 @@
 <template>
-  <div class="container" @click="popupHandler">
+  <div class="container">
     <header></header>
-    <tellStory @btnClick="popupHandler"></tellStory>
-    <popup />
+    <tellStory></tellStory>
     <videoBlock />
     <!-- v-if ="ModalVisible" -->
 
@@ -13,23 +12,13 @@
 
 <script>
 import video from '@/components/blocks/video';
-import popup from '@/components/blocks/popup';
+// import popup from '@/components/blocks/popup';
 import tellStory from '@/components/blocks/tellStory';
 export default {
   components: {
     videoBlock: video,
-    popup,
+    // popup,
     tellStory,
-  },
-  methods: {
-    popupHandler() {
-      this.popupShow = !this.popupShow;
-    },
-  },
-  data() {
-    return {
-      popupShow: true,
-    };
   },
 };
 </script>
