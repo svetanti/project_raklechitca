@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="storiesBlock">
+    <section class="storiesBlock" @click="$emmit('btnClick')">
       <div class="storyDescription">
         <h2 class="storyDescription__title">
           Расскажите свою<br />
@@ -15,12 +15,12 @@
         </p>
       </div>
 
-      <div class="buttonDescription">
+      <div class="buttonDescription" @click="$emmit('btnClick')">
         <div class="options">
           <p class="option__first">1-й вариант</p>
           <p class="option__second">2-й вариант</p>
         </div>
-        <div class="options__description">
+        <div class="options__description" @click="$emmit('btnClick')">
           <p class="option__first-description">
             Заполнить подробную форму прямо на сайте и мы опубликуем вашу<br />
             историю после проверки. Пожалуйста, заполняйте все пункты<br />
@@ -31,46 +31,35 @@
             Оставить контакт (почту или номер телефона) и мы свяжемся с вами,<br />
             зададим вопросы, уточним детали вашей истории.
           </p>
-          <!-- <optionFirst /> -->
-          <!-- <optionSecond /> -->
+
           <popupButton />
         </div>
       </div>
     </section>
-
-    <section class="overlay">
-      <div class="popup">
-        <div class="popup__header">
-          <p class="popup__step">Шаг 1 из 12</p>
-          <img
-            class="icon__close"
-            src="/images/icon__close.svg"
-            alt="Кнопка закрытия формы отправки сообщения"
-          />
-        </div>
-        <p class="popup__question">Как вас зовут?</p>
-        <input type="text" class="popup__input" placeholder="Напишите тут" />
-        <p class="input__underline"></p>
-        <div class="popup__block">
-          <button class="popupBack__button">Назад</button>
-          <button class="popupNext__button">
-            <p class="popupNext__description">Далее</p>
-          </button>
-        </div>
-      </div>
-    </section>
+    <popup />
   </div>
 </template>
 
 <script>
 import popupButton from '@/components/ui/popupButton';
+import popup from '@/components/blocks/popup';
 // import optionFirst from '@/components/ui/optionFirst';
 // import optionSecond from '@/components/ui/optionSecond';
+
 export default {
   components: {
     popupButton,
-    // optionFirst,
-    // optionSecond,
+    popup,
+  },
+  methods: {
+    popupHandler() {
+      this.popupShow = !this.popupShow;
+    },
+  },
+  data() {
+    return {
+      popupShow: false,
+    };
   },
 };
 </script>
@@ -217,20 +206,7 @@ export default {
 .popup__header {
   display: flex;
 }
-.popup__step {
-  display: flex;
-  width: 177px;
-  height: 36px;
-  margin: 40px 647px 40px 40px;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 36px;
-  display: flex;
-  align-items: flex-end;
-  color: #000000;
-}
+
 .icon__close {
   width: 20px;
   height: 20px;
