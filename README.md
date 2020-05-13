@@ -1,6 +1,7 @@
-# rak
+# KhabenskyFond
 
-> rak
+> Charity project for Khabensky Fond. Благотворительный проект для фонда Хабенского.
+> 
 
 ## Build Setup
 

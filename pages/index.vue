@@ -1,14 +1,37 @@
 <template>
-  <div class="container">
-    <header><header>
-    <h1>Главная страница</h1>
+  <div class="container" @click="popupHandler">
+    <header></header>
+    <tellStory @btnClick="popupHandler"></tellStory>
+    <popup />
+    <videoBlock />
+    <!-- v-if ="ModalVisible" -->
+
     <a href="http://localhost:3000/stories">страница со всеми историями</a>
     <a href="http://localhost:3000/stories/1">страница с конкретной историей</a>
   </div>
 </template>
 
 <script>
-export default {};
+import video from '@/components/blocks/video';
+import popup from '@/components/blocks/popup';
+import tellStory from '@/components/blocks/tellStory';
+export default {
+  components: {
+    videoBlock: video,
+    popup,
+    tellStory,
+  },
+  methods: {
+    popupHandler() {
+      this.popupShow = !this.popupShow;
+    },
+  },
+  data() {
+    return {
+      popupShow: true,
+    };
+  },
+};
 </script>
 
 <style>
