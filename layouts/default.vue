@@ -95,7 +95,7 @@ html {
     display: grid;
     grid-template-columns: repeat(2, min-content) max-content;
     grid-gap: 30px;
-    margin: 9px 0; /*костылище*/
+    margin: 18px 0;
   }
 
   .break-line {
