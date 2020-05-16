@@ -7,9 +7,9 @@
         >
       </mobile-menu>
     </container>
-    <break-line class="break-line" />
+    <break-line class="break-line_mobile-menu" />
     <main-header />
-
+    <break-line class="break-line" v-if="$route.path !== '/'" />
     <popup v-if="this.$store.state.popup.popupShown"></popup>
     <nuxt />
     <main-footer />
@@ -68,7 +68,7 @@ html {
   display: none;
 }
 
-.break-line {
+.break-line_mobile-menu {
   display: none;
 }
 
@@ -98,7 +98,7 @@ html {
     margin: 18px 0;
   }
 
-  .break-line {
+  .break-line_mobile-menu {
     display: block;
   }
 }
