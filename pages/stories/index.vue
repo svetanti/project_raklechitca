@@ -98,6 +98,7 @@ export default {
   text-align: center;
   transition: border 0.25s linear, color 0.25s linear,
     background-color 0.25s linear;
+  cursor: pointer;
 }
 .stories-page__button:hover {
   background-color: white;
@@ -119,6 +120,7 @@ export default {
   margin-right: 10px;
   background-color: #fbfbfb;
   padding: 20px;
+  cursor: pointer;
 }
 .stories-page__element-list:hover {
   background-color: #f4f4f4;
