@@ -5,6 +5,7 @@
     <instagram />
     <your_story />
     <statistic />
+
     <about />
   </div>
 </template>
