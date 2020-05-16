@@ -1,6 +1,5 @@
 <template>
   <section class="about-project">
-
     <div class="about-project__container">
       <h2 class="about-project__title">#РАКЛЕЧИТСЯ</h2>
       <p class="about-project__subtitle">О проекте</p>
@@ -35,7 +34,6 @@
           </li>
         </ul>
       </div>
-
     </div>
   </section>
 </template>
@@ -59,7 +57,6 @@ export default {};
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 .about-project__title {
   font-style: normal;
@@ -68,7 +65,6 @@ export default {};
   line-height: 77px;
   text-align: center;
   color: #ffffff;
-
 }
 .about-project__subtitle {
   font-style: normal;
@@ -104,16 +100,13 @@ export default {};
   font-weight: 500;
   color: #ffffff;
   cursor: pointer;
-
 }
 .about-project__name_company {
   font-weight: normal;
   color: #c9c9c9;
 }
 .about-project__description {
-
   padding-left: 0;
-
 }
 .about-project__paragraph:first-child {
   margin-bottom: 20px;
@@ -128,7 +121,6 @@ export default {};
 }
 
 .about-project__place-container {
-
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
@@ -278,5 +270,4 @@ export default {};
     margin-bottom: 40px;
   }
 }
-
 </style>

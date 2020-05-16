@@ -20,7 +20,6 @@ import TellYourStory from '~/components/TellYourStory';
 import Statistic from '@/components/Statistic';
 import AboutProject from '~/components/AboutProject';
 
-
 export default {
   components: {
     videoBlock: video,
