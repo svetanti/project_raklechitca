@@ -65,6 +65,8 @@ export default {};
   line-height: 77px;
   text-align: center;
   color: #ffffff;
+
+  margin: 0 0 70px 0;
 }
 .about-project__subtitle {
   font-style: normal;
@@ -107,6 +109,7 @@ export default {};
 }
 .about-project__description {
   padding-left: 0;
+  list-style-type: none;
 }
 .about-project__paragraph:first-child {
   margin-bottom: 20px;
