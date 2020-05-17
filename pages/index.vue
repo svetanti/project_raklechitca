@@ -1,17 +1,18 @@
 <template>
   <div class="container">
     <banner />
+    <videoBlock />
     <stories />
     <instagram />
     <your_story />
     <statistic />
-
     <about />
   </div>
 </template>
 
 <script>
 import Banner from '@/components/ui/Banner';
+import video from '@/components/video';
 import Stories from '@/components/Stories';
 import Instagram from '~/components/Instagram';
 import TellYourStory from '~/components/TellYourStory';
@@ -21,6 +22,7 @@ import AboutProject from '~/components/AboutProject';
 
 export default {
   components: {
+    videoBlock: video,
     stories: Stories,
     instagram: Instagram,
     your_story: TellYourStory,

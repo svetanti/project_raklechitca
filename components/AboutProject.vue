@@ -87,6 +87,7 @@ export default {};
 }
 .about-project__list-names {
   list-style-type: none;
+
   padding-left: 0;
 }
 .about-project__name {
