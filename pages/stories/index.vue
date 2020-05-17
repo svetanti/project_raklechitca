@@ -5,6 +5,9 @@
     <div class="stories-page__search">
       <input class="stories-page__space" type="text" />
       <button class="stories-page__button">Поиск</button>
+      <button class="stories-page__button-magnifier">
+        <img src="/Images/lupa.svg" />
+      </button>
     </div>
 
     <storyGrid />
@@ -108,10 +111,26 @@ export default {
   transition: border 0.25s linear, color 0.25s linear,
     background-color 0.25s linear;
 }
+.stories-page__button-magnifier {
+  display: none;
+  background-color: #613a93;
+  border: 2px solid white;
+  width: 46px;
+  height: 46px;
+  padding: 13px;
+
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  cursor: pointer;
+}
 .stories-page__page-list-container {
   display: flex;
   flex-direction: row;
   list-style-type: none;
+  margin-top: 140px;
 }
 .stories-page__element-list {
   display: block;
@@ -131,5 +150,88 @@ export default {
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
+}
+@media screen and (max-width: 1279px) {
+  .stories-page__container {
+    padding: 90px 50px;
+  }
+  .stories-page__title {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 50px;
+  }
+  .stories-page__search {
+    margin-bottom: 60px;
+  }
+  .stories-page__page-list-container {
+    margin-top: 130px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .stories-page__container {
+    padding: 80px 50px;
+  }
+  .stories-page__title {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 40px;
+  }
+  .stories-page__space {
+    width: calc(100% - 231px);
+  }
+  .stories-page__button {
+    width: 208px;
+  }
+  .stories-page__search {
+    margin-bottom: 46px;
+  }
+  .stories-page__page-list-container {
+    margin-top: 110px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .stories-page__container {
+    padding: 80px 40px;
+  }
+  .stories-page__title {
+    margin-left: auto;
+    margin-bottom: 50px;
+    max-width: 380px;
+    text-align: center;
+  }
+  .stories-page__page-list-container {
+    margin-top: 130px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .stories-page__button {
+    width: 108px;
+  }
+  .stories-page__space {
+    width: calc(100% - 131px);
+  }
+}
+@media screen and (max-width: 455px) {
+  .stories-page__container {
+    padding: 68px 15px 50px 15px;
+  }
+  .stories-page__title {
+    max-width: 290px;
+    margin-left: 0;
+
+    font-size: 18px;
+    line-height: 21px;
+    text-align: left;
+  }
+  .stories-page__button {
+    display: none;
+  }
+  .stories-page__button-magnifier {
+    display: block;
+  }
+  .stories-page__space {
+    height: 46px;
+    width: calc(100% - 62px);
+  }
 }
 </style>
