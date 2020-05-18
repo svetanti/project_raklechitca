@@ -12,7 +12,9 @@
     <break-line class="break-line" v-if="$route.path !== '/'" />
     <popup v-if="this.$store.state.popup.popupShown"></popup>
     <nuxt />
-    <main-footer />
+    <social v-if="socialShown" />
+    <!--Допилить-->
+    <main-footer @shareClick="showSocial" />
   </div>
 </template>
 
@@ -22,6 +24,7 @@ import BreakLine from '@/components/ui/BreakLine';
 import MobileMenu from '@/components/MobileMenu';
 import Header from '@/components/Header';
 import popup from '@/components/popup';
+import Social from '@/components/Social';
 import Footer from '@/components/Footer';
 
 export default {
@@ -31,11 +34,20 @@ export default {
     'mobile-menu': MobileMenu,
     'main-header': Header,
     popup,
+    social: Social,
     'main-footer': Footer,
   },
   computed: {
     isMobileMenuOpened() {
       return this.$store.getters['mobile-menu/getMobileMenuState'];
+    },
+    socialShown() {
+      return this.$store.getters['data/social/getSocialShown'];
+    },
+  },
+  methods: {
+    showSocial() {
+      this.$store.commit('data/social/toggleSocial');
     },
   },
 };

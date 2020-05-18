@@ -11,18 +11,18 @@ export default {};
 <style scoped>
 .container {
   max-width: 1320px;
-  margin: 0 60px;
+  padding: 0 60px;
 }
 
 @media screen and (max-width: 1439px) {
   .container {
-    margin: 0 50px;
+    padding: 0 50px;
   }
 }
 
 @media screen and (max-width: 730px) {
   .container {
-    margin: 0 15px;
+    padding: 0 15px;
   }
 }
 </style>
