@@ -2,9 +2,13 @@
   <div class="main-container">
     <container class="container__mobile-menu">
       <mobile-menu v-if="isMobileMenuOpened" class="mobile-menu">
-        <nuxt-link to="#" class="mobile-menu__link header__link_share"
-          >Рассказать историю</nuxt-link
+        <button
+          type="button"
+          class="menu__link header__share"
+          @click="$store.commit('popup/open')"
         >
+          Рассказать историю
+        </button>
       </mobile-menu>
     </container>
     <break-line class="break-line_mobile-menu" />
@@ -13,7 +17,6 @@
     <popup v-if="this.$store.state.popup.popupShown"></popup>
     <nuxt />
     <social v-if="socialShown" />
-    <!--Допилить-->
     <main-footer @shareClick="showSocial" />
   </div>
 </template>
@@ -93,10 +96,6 @@ html {
   opacity: 0.8;
 }
 
-.header__link_share {
-  color: #121212;
-}
-
 @media screen and (max-width: 1023px) {
   .mobile-menu {
     width: 100%;
@@ -110,6 +109,24 @@ html {
     margin: 18px 0;
   }
 
+  .header__share {
+    width: fit-content;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #121212;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: normal;
+    transition: 0.3s;
+  }
+
+  .header__share:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
   .break-line_mobile-menu {
     display: block;
   }
@@ -120,6 +137,10 @@ html {
     font-size: 13px;
     grid-template-columns: 1fr;
     grid-gap: 18px;
+  }
+
+  .header__share {
+    font-size: 13px;
   }
 }
 </style>
