@@ -131,6 +131,7 @@ export default {
   flex-direction: row;
   list-style-type: none;
   margin-top: 140px;
+  padding: 0;
 }
 .stories-page__element-list {
   display: block;
@@ -167,6 +168,11 @@ export default {
   .stories-page__page-list-container {
     margin-top: 130px;
   }
+  .stories-page__element-list {
+    width: 56px;
+    height: 56px;
+    padding: 19px;
+  }
 }
 @media screen and (max-width: 1023px) {
   .stories-page__container {
@@ -188,6 +194,11 @@ export default {
   }
   .stories-page__page-list-container {
     margin-top: 110px;
+  }
+  .stories-page__element-list {
+    width: 50px;
+    height: 50px;
+    padding: 15px;
   }
 }
 @media screen and (max-width: 767px) {
