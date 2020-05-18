@@ -151,6 +151,7 @@ export default {
   font-size: 18px;
   line-height: 22px;
 }
+
 @media screen and (max-width: 1279px) {
   .stories-page__container {
     padding: 90px 50px;
@@ -209,6 +210,9 @@ export default {
   }
   .stories-page__space {
     width: calc(100% - 131px);
+  }
+  .stories-page__element-list:nth-child(n + 5) {
+    display: none;
   }
 }
 @media screen and (max-width: 455px) {
