@@ -1,6 +1,6 @@
-# rak
+# project_raklechitca
 
-> rak
+> project_raklechitca
 
 ## Build Setup
 
