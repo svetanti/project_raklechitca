@@ -1,6 +1,4 @@
-# project_raklechitca
-
-> project_raklechitca
+# Конкурсный проект для благотворительного фонда Константина Хабенского "Рак лечится"
 
 ## Build Setup
 
